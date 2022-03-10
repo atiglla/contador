@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contador</title>
+    <style>
+        h1 {
+            text-align: center;
+        }
+        h2 {
+            text-align:center;
+        }
+        .container {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .container * {
+            padding: 10px;
+            margin: 10px;
+            background-color: red;
+            border-radius: 5px;
+            color: white;
+            text-decoration: none;
+        }
+    </style>
+</head>
+<body>
+    <h1>Counter</h1>
+    <div>
+        <h2>{{session['contador']}}</h2>
+        <div class="container"> 
+            <a href="/destroy_session">Reiniciar</a>
+            <a href="/">Click</a>
+            <a href="/mas2">Click+2</a>
+        </div>
+    </div>
+    
+</body>
+</html>
+
+
